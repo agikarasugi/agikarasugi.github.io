@@ -1,0 +1,201 @@
+@keyframes hoverRed {
+  0% {
+    background-color: inherit;
+    color: inherit;
+  }
+  100% {
+    background-color: #FF3B3F;
+    color: white;
+  }
+}
+
+.hover-red > a:hover {
+  animation: hoverRed ease 0.2s;
+  background-color: #FF3B3F;
+  color: white;
+}
+
+body {
+  background-color: #EFEFEF;
+  margin: 0;
+}
+
+.top-bar {
+  background-color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo-section {
+  float: left;
+  width: 30%;
+}
+
+.logo-section > a {
+  display: block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em 1em;
+  float: left;
+  width: auto;
+  text-align: center;
+}
+
+.nav-section {
+  float: right;
+  width: auto;
+}
+
+.nav-content {
+  float: right;
+}
+
+.nav-content > a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 1em 1.5em;
+  float: left;
+  width: auto;
+  text-align: center;
+}
+
+.main-title-content {
+  margin: 30px 0 0 0;
+  background-color: #FF3B3F;
+  text-align: center;
+  padding: 5em 1em 3em 1em;
+}
+
+.main-title-greeting {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  padding: 2em 1em 1em 1em;
+  text-align: center;
+}
+
+.main-title-greeting > p {
+  font-style: oblique;
+}
+
+.main-title-pic {
+  display: inline-block;
+  background-image: url("logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  /* border-radius: 50%; */
+  width: 300px;
+  height: 300px;
+}
+
+.short-skill-content {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: 0 5px 50px #000000;
+  height: auto;
+}
+
+.skill-image, .skill-text {
+  padding: 2rem;
+  flex: 1;
+}
+
+.skill-image {
+  background-color: #DEDEDE;
+}
+
+.buttons {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.buttons > a {
+  background-color: #FF3B3F;
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.short-aboutme-content {
+  font-family: 'Open Sans', sans-serif;
+  box-shadow: inset 0 5px 50px -15px #000000;
+  background-color: #A9A9A9;
+  margin: 0;
+  text-align: center;
+}
+
+.aboutme-text {
+  padding: 4rem 4rem;
+}
+
+.aboutme-text p {
+  margin-top: 0;
+}
+
+.contact {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #262626;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact p {
+  margin: 4rem 1rem 3rem 1rem;
+}
+
+.contact-links > a img {
+  margin: 1rem 1rem 4rem 1rem;
+}
+
+.footer-bar {
+  background-color: #434343;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 1rem 0;
+  color: white;
+}
+
+@media only screen and (max-width: 610px) {
+  .nav-content > a {
+    display: none;
+  }
+
+  .logo-section {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo-section > a {
+    width: 100%;
+    padding: 1em 0;
+  }
+
+  .main-title-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .main-title-content {
+    padding: 4em 1em 2em 1em;
+  }
+
+  .main-title-greeting {
+    padding: 1em 1em 1em 1em;
+  }
+
+  .short-skill-content {
+    display: block;
+  }
+}
