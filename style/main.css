@@ -9,6 +9,15 @@
   }
 }
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .hover-red > a:hover {
   animation: hoverRed ease 0.2s;
   background-color: #FF3B3F;
@@ -54,6 +63,19 @@ body {
 
 .nav-content {
   float: right;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-content-sml {
+  display: none;
+  background-color: #FFFFFF;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin-top: 1em;
 }
 
 .nav-content > a {
@@ -179,6 +201,38 @@ body {
 
   .logo-section > a {
     width: 100%;
+    padding: 1em 0;
+  }
+
+  .nav-menu {
+    display: block;
+    float: right;
+    width: auto;
+    position: absolute;
+    right: 0;
+    padding: 1em 1.5em;
+  }
+
+  .nav-menu:hover {
+    animation: hoverRed ease 0.2s;
+    background-color: #FF3B3F;
+  }
+
+  .nav-menu:hover .nav-content-sml, .nav-content-sml a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    float: left;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu:hover .nav-content-sml {
+    animation: fadeIn ease 0.5s;
+  }
+
+  .nav-content-sml a {
     padding: 1em 0;
   }
 
