@@ -14,15 +14,15 @@
           <a href="#">P. AGI KARAS.</a>
         </div>
         <div class="nav-section">
-          <div class="nav-content hover-red">
+          <div class="nav-content" onclick="alertComing()">
             <a href="#">HOME</a>
             <a href="#">SKILLS</a>
             <a href="#">ABOUT</a>
             <a href="#">CONTACT</a>
           </div>
           <div class="nav-menu">
-            <img onclick="displayMenu()" src="style/menu.svg" alt="menu" width="20px">
-            <div class="nav-content-sml hover-red" id="hiddenMenu">
+            <img src="style/menu.svg" alt="menu" width="20px">
+            <div class="nav-content-sml" id="hiddenMenu" onclick="alertComing()">
               <a href="#">HOME</a>
               <a href="#">SKILLS</a>
               <a href="#">ABOUT</a>
@@ -37,37 +37,43 @@
         <div class="main-title-greeting">
           <h2>HELLO!</h2>
           <h1>My Name is I Putu Agi Karasugi</h1>
-          <p>Passionate and curious student at Binus University</p>
+          <p>Passionate and curious Computer Science student at Binus University</p>
           <p>Eager to learn, striving for excellence</p>
         </div>
       </div>
       <div class="short-skill-content">
         <div class="skill-image">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class="skill-image-img">
+
+          </div>
         </div>
         <div class="skill-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <div class="buttons">
-            <a href="#">View CV</a>
-            <a href="#">See my Projects</a>
+          <p>I am studying Artificial Intelligence topics such as Computer Vision, Natural Languange Processing, and Machine Learning. I also study Android Development, Game Development, and Web Development.</p>
+          <p>I am currently attending courses at Dicoding Indonesia in Android Developer Expert, Kotlin Developer Expert, Game Developer Expert, and Progressive Web Apps. I also tinker with Web Development in my free time.</p>
+          <p>Curious with my portofolio and projects? Visit them in the link below!</p>
+          <div class="buttons" onclick="alertComing()">
+            <a href="#">View Portofolio</a>
+            <a href="#">My Works</a>
           </div>
         </div>
       </div>
       <div class="short-aboutme-content">
+        <div class="aboutme-img"></div>
         <div class="aboutme-text">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Agi Karasugi is an undergraduate at Bina Nusantara University, where Agi majors in Computer Science. In his free time, he likes to study Android Development, Artificial Intelligence, and Web Development.</p>
+          <p>Before attending university, Agi studied at SMA Kristes Harapan High School, where he joined the Harapan Computer Club. In the span of three years as the member (later the lead) of the club, Agi had participated in many competitions in academic writing, computer quiz, educational video, poster design, PowerPoint design, and short-film production.</p>
+          <p>Name is a hobby 1, hobby 2 from city or state you live in. Please email your email address or go to your website domain and link to contact Name.</p>
         </div>
       </div>
       <div class="contact">
         <p>GET IN TOUCH</p>
         <div class="contact-links">
-            <a href="#"><img src="style/linkedin.svg" width=50px></img></a>
-            <a href="#"><img src="style/github.svg" width=50px></img></a>
-            <a href="#"><img src="style/whatsapp.svg" width=50px></img></a>
-            <a href="#"><img src="style/line.svg" width=50px></img></a>
-            <a href="#"><img src="style/instagram.svg" width=50px></img></a>
-            <a href="#"><img src="style/twitter.svg" width=50px></img></a>
+            <a href="https://www.linkedin.com/in/i-putu-agi-karasugi-74a6a0183/"><img src="style/linkedin.svg" width=50px></img></a>
+            <a href="https://github.com/agikarasugi"><img src="style/github.svg" width=50px></img></a>
+            <a href="https://wa.me/87889344774"><img src="style/whatsapp.svg" width=50px></img></a>
+            <a href="line://ti/p/agi_karasugi"><img src="style/line.svg" width=50px></img></a>
+            <a href="https://www.instagram.com/agikarasugi/"><img src="style/instagram.svg" width=50px></img></a>
+            <a href="https://twitter.com/theagikarasugi"><img src="style/twitter.svg" width=50px></img></a>
         </div>
       </div>
       <div class="footer-bar">
@@ -75,3 +81,11 @@
       </div>
   </body>
 </html>
+
+<script type="text/javascript">
+  // alert("Please note that this website is still in development.\nThe website, and all content found on it are provided on an “as is” and “as available” basis");
+
+  function alertComing() {
+    alert("Coming soon!");
+  }
+</script>
