@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign up</title>
+    <title>Document</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -23,9 +23,6 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.2/js/mdb.min.js"></script>
-
-    <link rel="stylesheet" href="css/register.css">
-
 </head>
 
 <body>
@@ -55,30 +52,47 @@
     </nav>
 
     <div class="container mt-5 mb-5">
-        <h1>Sign Up</h1> <br>
-        <form>
-            <div class="col">
-                <div class="form-group">
-                    <label for="formGroupExampleInput">First Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="First Name" required>
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Gambar pakaian -->
+                <img src="images/Batik Bhineka.png" class="img-fluid border" alt="Responsive image">
+            </div>
+            <div class="col-md-6 mt-2">
+                <!-- Judul produk -->
+                <h3 class="font-weight-bold mb-2 text-uppercase">Kaos Batik Tulis Kombi Bhineka</h3>
+                <!-- Harga produk -->
+                <h4>IDR 55K</h4>
+
+                <h6 class="font-weight-bold mt-5">SIZE</h6>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off" checked> S
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> M
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> L
+                    </label>
+                    <label class="btn btn-primary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> XL
+                    </label>
                 </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput2">Last Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Last Name" required>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlInput1">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address" required>
-                </div>
-                <div class="form-group">
-                    <label for="formGroupExampleInput">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
-                </div>
-        </form>
-        <button type="submit" class="btn btn-success">Register</button>
-        <hr>
-        <a href="login.html" class="btn btn-block btn-primary">Log In </a>
-    </div>
+                <form>
+                    <div class="row align-items-center mt-3 mb-3">
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Qty">
+                        </div>
+                        <div class="col">
+                            <button type="button" class="btn btn-success">BUY NOW</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Deskripsi produk -->
+                <p>Kaos batik tulis jenis cap kombinasi tulis.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -128,7 +142,6 @@
 
     </footer>
     <!-- Footer -->
-
 </body>
 
 </html>
